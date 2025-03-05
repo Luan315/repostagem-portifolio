@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Portifólio</title>
+    <link rel="stylesheet" href="Formatacao.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">  
+   
+</head>
+<body>
+    <header>
+        <nav class="cabecalho">
+            <a class="cabecalho__link" href="Inicio.html">Inicio</a>
+            <a class="cabecalho__link" href="Sobre mim.html">Sobre mim</a>
+            <a class="cabecalho__link" href="Hobbies.html">Hobbies</a>
+            <a class="cabecalho__link" href="Final.html">Considerações finais</a>
+
+
+            <div>
+                <button class="contato__botao" onclick="exibirContatos()">Contato</button>
+            </div>
+            <div id="contatos" style="display: none;">
+                <p>Email: luanmott4109@gmail.com</p>
+                <p>Telefone: (24) 99866-3974</p>
+                <p>LinkedIn: <a class="linkedin" href="https://www.linkedin.com/in/luan-motta-5251a733a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Meu perfil</a></p>
+            </div>
+        </nav>
+    </header>
+    <h1 class="titulo">Considerações finais</h1>
+    <p class="texto__final">Se você chegou ate aqui eu te agradesço muito!
+        <br>Chegar até este final significa muito para mim, pois consegui compartilhar com você minha história, minhas formações, hobbies e as habilidades que venho desenvolvendo como programador nestes quatro meses.
+        <br>Este projeto começou no dia 11/11 e estou concluindo no dia 23/11, totalizando 11 dias de dedicação.
+        <br>Esses 11 dias não incluem os finais de semana, que reservo para estudar matérias em que encontro maior dificuldade na faculdade e para descansar um pouco
+        <br>Durante esses dias de desenvolvimento, dediquei aproximadamente duas horas a duas horas e meia por dia, geralmente à tarde, para programar e dar forma a este projeto.
+        <br>Além disso, me esforcei para aplicar os conhecimentos adquiridos nos estudos e fui além, buscando referências e explorando novos conceitos que pudessem enriquecer este trabalho.
+        <br>Este projeto não foi apenas um desafio técnico, mas também uma oportunidade de mostrar minha dedicação e o quanto sou comprometido com meu crescimento pessoal e profissional. 
+        <br>Meu objetivo é continuar aprendendo, evoluindo e enfrentando desafios ainda maiores.
+        <br>Muito obrigado por dedicar seu tempo para conhecer mais sobre mim e o trabalho que desenvolvi.
+    </p>
+
+    <p class="texto__final">Caso queira entrar em contato para dar sugestões ou ate mesmo que eu faça algum programa, fique a vontade para entrar em contato ao clicar no botão <span class="botao__copia">contatos</span> .Sua visita, atenção e contato significam muito! </p>
+    
+
+    <script>
+        function exibirContatos() {
+            const contatosDiv = document.getElementById("contatos");
+            if (contatosDiv.style.display === "none") {
+                contatosDiv.style.display = "block"; 
+            } else {
+                contatosDiv.style.display = "none"; 
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Portifólio</title>
+    <link rel="stylesheet" href="Formatacao.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">  
+   
+</head>
+<body>
+    <header>
+        <nav class="cabecalho">
+            <a class="cabecalho__link" href="Inicio.html">Inicio</a>
+            <a class="cabecalho__link" href="Sobre mim.html">Sobre mim</a>
+            <a class="cabecalho__link" href="Hobbies.html">Hobbies</a>
+            <a class="cabecalho__link" href="Final.html">Considerações finais</a>
+
+            <div>
+                <button class="contato__botao" onclick="exibirContatos()">Contato</button>
+            </div>
+            <div id="contatos" style="display: none;">
+                <p>Email: luanmott4109@gmail.com</p>
+                <p>Telefone: (24) 99866-3974</p>
+                <p>LinkedIn: <a class="linkedin" href="https://www.linkedin.com/in/luan-motta-5251a733a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Meu perfil</a></p>
+            </div>
+        </nav>
+    </header>
+    </header>
+    <h1 class="titulo">Hobbies</h1>
+    <p class="texto__hobbie">Um dos meus hobbies favoritos é jogar videogames, especialmente jogos que desafiam a criatividade, estratégia ou trabalho em equipe. Além de ser uma forma de diversão, os videogames me ajudam a desenvolver habilidades como resolução de problemas e pensamento crítico. </p>
+        <div class="imagem">
+            <img src="img/eldenring.jfif" alt="Elden Ring" width= '225px'
+            height= '225px'>
+            <img src="img/master duel.jfif" alt="Yugioh Master Duel" width= '225px'
+            height= '225px'>
+        </div>
+
+    <p class="texto__hobbie">Outro grande interesse meu é estudar. Tenho curiosidade em aprender sobre diversos assuntos e gosto de explorar novas áreas do conhecimento que possam me ajudar a crescer, tanto profissionalmente quanto pessoalmente.
+        
+    <br>Nos meus momentos livres, também aprecio assistir séries  que me permitem relaxar.
+
+    <br>Gosto de praticar musculação, permitindo-me melhorar a saúde e o meu fisico.
+
+        <div class="imagem">
+            <img src="img/Estudo.webp" alt="Estudos"  width= '225px'
+            height= '225px'>
+            <img src="img/round6.webp" alt="Round 6" width= '225px'
+            height= '225px'>
+            <img src="img/musculacao.png" alt="Musculação" width= '225px'
+            height= '225px'>
+            
+           
+        </div>
+
+        
+    <p class="texto__hobbie">Por fim, gosto de passar tempo com amigos e familiares, seja para conversar, jogar algo juntos ou assistir a um filme. Esses momentos de conexão são importantes para fortalecer os laços com as pessoas ao meu redor.</p>
+        <div class="imagem">
+            <img src="img/Familia.jpg" alt="Familia unida" width= '225px'
+            height= '225px'>
+        </div>
+
+    
+        <script>
+            function exibirContatos() {
+                const contatosDiv = document.getElementById("contatos");
+                if (contatosDiv.style.display === "none") {
+                    contatosDiv.style.display = "block"; 
+                } else {
+                    contatosDiv.style.display = "none"; 
+                }
+            }
+        </script>
+        
+
+</body>
+</html>

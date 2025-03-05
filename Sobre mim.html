@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Portifólio</title>
+    <link rel="stylesheet" href="Formatacao.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">  
+   
+</head>
+<body>
+    <header>
+        <nav class="cabecalho">
+            <a class="cabecalho__link" href="Inicio.html">Inicio</a>
+            <a class="cabecalho__link" href="Sobre mim.html">Sobre mim</a>
+            <a class="cabecalho__link" href="Hobbies.html">Hobbies</a>
+            <a class="cabecalho__link" href="Final.html">Considerações finais</a>
+
+            <div>
+                <button class="contato__botao" onclick="exibirContatos()">Contato</button>
+            </div>
+            <div id="contatos" style="display: none;">
+                <p>Email: luanmott4109@gmail.com</p>
+                <p>Telefone: (24) 99866-3974</p>
+                <p>LinkedIn: <a class="linkedin" href="https://www.linkedin.com/in/luan-motta-5251a733a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Meu perfil</a></p>
+            </div>
+            
+        </nav>
+    </header>
+    <h1 class="titulo">Sobre mim</h1>
+
+        <h2 class="subtitulo">Formações</h2>
+        <p class="texto__sobre"> Prazer novamente! Meu nome é Luan Leonardo Motta e sou estudante de Engenharia Civil no Centro Universitário Geraldo Di Biase (UGB), localizado em Volta Redonda. Atualmente, estou no final do segundo período do curso. E no ensino médio cursei Técnico em Química na ETEC (Escola Técnica Pandiá Calógeras) entre 2021 e 2023.
+            <br> Além disso, possuo conhecimentos em ferramentas como Word, Excel e PowerPoint que utilizo para organizar e apresentar informações de forma clara e eficiente.
+        </p>
+
+        <h2 class="subtitulo">Motivação para ser programador</h2>
+        <p class="texto__sobre"> Quando tentei buscar por oportunidades de trabalho como técnico em Química, tive dificuldades em encontrar um emprego, principalmente pela falta de vagas próximas à minha cidade. Muitas vezes, as oportunidades estavam a mais de uma hora de distância, o que dificultava tanto a dedicação à faculdade quanto a uma rotina de trabalho. Por conta dessas dificuldades, percebi a necessidade de buscar alternativas que permitissem maior flexibilidade.   </p>
+          
+        <h2 class="subtitulo">Como resolvi o problema do distanciamento</h2>
+        <p class="texto__sobre">  A maneira que encontrei de flexibilizar este distanciamento foi explorar a área programação como forma de resolver esse problema, principalmente pelo modelo de trabalho remoto (home office). Durante minhas pesquisas, conheci a plataforma Alura, que chamou minha atenção pela qualidade dos cursos e pela possibilidade de aprender habilidades que complementassem minha formação. 
+        
+        <br>Escolhi me especializar em Front-End, área que sempre despertou-me curiosidade, desde a infância, ao observar sites com designs interativos, imagens e animações. Comecei a estudar para entender como esses sites eram feitas. Na infância a minha ideia era apenas explorar, mas nos dias atuais resolvi colocar em prática o que aprendi anteriormente e o que estou aprendendo com o curso da Alura   </p>
+
+        <h2 class="subtitulo">Planos de estudo</h2>
+        <p class="texto__sobre"> Existem diversos tipos de linguagens e especialidades diferentes na programação Front-end. Então com estas diversas linguagens, decidi dar destaque para JavaScript, HTML e CSS. São linguagens que considerei acessíveis para quem está iniciando e que irá me ajudar a construir outros projetos no futuro. Caso tenha alguma sugestão de tópicos ou linguagens para estudar, ficarei muito grato por receber suas ideias.</p>
+        
+
+        <script>
+            function exibirContatos() {
+                const contatosDiv = document.getElementById("contatos");
+                if (contatosDiv.style.display === "none") {
+                    contatosDiv.style.display = "block"; 
+                } else {
+                    contatosDiv.style.display = "none"; 
+                }
+            }
+        </script>
+</body>
+</html>

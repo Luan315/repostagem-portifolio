@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Portifólio</title>
+    <link rel="stylesheet" href="Formatacao.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">  
+   
+</head>
+<body>
+    <header>
+        <nav class="cabecalho">
+            <a class="cabecalho__link" href="Inicio.html">Inicio</a>
+            <a class="cabecalho__link" href="Sobre mim.html">Sobre mim</a>
+            <a class="cabecalho__link" href="Hobbies.html">Hobbies</a>
+            <a class="cabecalho__link" href="Final.html">Considerações finais</a>
+
+            <div>
+                <button class="contato__botao" onclick="exibirContatos()">Contato</button>
+            </div>
+            <div id="contatos" style="display: none;">
+                <p>Email: luanmott4109@gmail.com</p>
+                <p>Telefone: (24) 99866-3974</p>
+                <p>LinkedIn: <a class="linkedin" href="https://www.linkedin.com/in/luan-motta-5251a733a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Meu perfil</a></p>
+            </div>
+            
+        </nav>
+    </header>
+    <h1 class="titulo">Inicio</h1>
+        <p class="frase__inicial">Ola, seja bem vindo ao meu primeiro projeto de html e css.</p>
+
+        <p class="texto"><br>Meu nome é Luan Leonardo e estou estudando de programação há 4 meses, desde metade de julho de 2024. Durante esse período, produzi este   portfólio como parte do curso de programação em front-end oferecido pela plataforma Alura.
+
+            <br>Este é o meu primeiro site, e estou aberto a sugestões para aprimorar futuros projetos. Caso você identifique algum ponto de melhoria, ficarei grato por qualquer feedback!
+            
+
+            <br>Atualmente, não tenho planos de me aprofundar em design. Portanto, este site foi desenvolvido com base em referências de outros portfólios que pesquisei, sem o uso de ferramentas como o Figma.
+            
+            
+            <br>No momento, meu foco está em focar os estudos em front-end. Mais adiante, considerarei a possibilidade de explorar o design para complementar minhas habilidades.
+            
+            </p>
+        
+            <script>
+                function exibirContatos() {
+                    const contatosDiv = document.getElementById("contatos");
+                    if (contatosDiv.style.display === "none") {
+                        contatosDiv.style.display = "block"; 
+                    } else {
+                        contatosDiv.style.display = "none"; 
+                    }
+                }
+            </script>
+</body>
+</html>
